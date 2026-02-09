@@ -7,4 +7,6 @@ public class Ludo {
     public static void main(String[] args) {
         Application.launch(LudoApplication.class, args);
     }
+
+
 }

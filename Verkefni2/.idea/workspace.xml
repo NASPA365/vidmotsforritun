@@ -13,7 +13,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/hi/verkefni/module-info.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hi/verkefni/vidmot/LudoApplication.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hi/verkefni/vidmot/LudoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Ludo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Leikmadur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Leikmadur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Ludo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Ludo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Reitur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Reitur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Teningur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Teningur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hi/verkefni/CSS/ludo.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hi/verkefni/ludo-view.fxml" beforeDir="false" />
@@ -71,6 +73,7 @@
   "keyToString": {
     "Application.Launcher.executor": "Run",
     "Application.Ludo.executor": "Run",
+    "Application.Reitur.executor": "Run",
     "Application.Teningur.executor": "Run",
     "Maven.vidmot [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -102,7 +105,20 @@
       <recent name="hi.verkefni.vidmot" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Reitur">
+    <configuration name="Reitur" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hi.verkefni.vinnsla.Reitur" />
+      <module name="vidmot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hi.verkefni.vinnsla.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Teningur" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hi.verkefni.vinnsla.Teningur" />
       <module name="vidmot" />
@@ -123,6 +139,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Reitur" />
         <item itemvalue="Application.Teningur" />
       </list>
     </recent_temporary>

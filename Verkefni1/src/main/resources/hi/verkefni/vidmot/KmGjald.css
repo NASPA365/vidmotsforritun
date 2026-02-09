@@ -1,0 +1,8 @@
+.text-field.rangt-inntak {
+    -fx-border-color: red;
+    -fx-border-width: 2px;
+    -fx-background-color: #FFCCCB;
+}
+.label.rangt-inntak {
+    -fx-text-fill: red;
+}

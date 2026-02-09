@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane hgap="12" vgap="16" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hi.verkefni.vidmot.KmgjaldController">
+
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <stylesheets>
+        <URL value="@KmGjald.css" />
+    </stylesheets>
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" minWidth="140.0" />
+        <ColumnConstraints hgrow="ALWAYS" minWidth="140.0" />
+        <ColumnConstraints minWidth="120" />
+        <ColumnConstraints hgrow="ALWAYS" />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints minHeight="10" />
+        <RowConstraints minHeight="10" />
+        <RowConstraints minHeight="10" />
+        <RowConstraints minHeight="10" />
+        <RowConstraints minHeight="10" />
+        <RowConstraints minHeight="10" />
+        <RowConstraints minHeight="10" />
+    </rowConstraints>
+
+    <Label text="Flokkur (A eða C)" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="flokkurField" maxWidth="Infinity" onAction="#onFlokkurField" text="" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <Label text="Gjald á km" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+    <TextField fx:id="gjaldPerKmField" editable="false" focusTraversable="false" maxWidth="Infinity" style="-fx-border-color: black;" styleClass="output-field" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+
+    <Label text="Upphafs km staða" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="upphafKmField" maxWidth="Infinity" onAction="#onUpphafsKmField" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Label text="Loka km staða" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <TextField fx:id="lokaKmField" maxWidth="Infinity" onAction="#onLokaKmField" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <Label text="Mán. km og gjald" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <TextField fx:id="manKmField" editable="false" focusTraversable="false" maxWidth="Infinity" style="-fx-border-color: black;" styleClass="output-field" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <TextField fx:id="manGjaldField" editable="false" focusTraversable="false" maxWidth="Infinity" style="-fx-border-color: black;" styleClass="output-field" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+    <Button fx:id="skraBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSkraBtn" text="Skrá km stöðu" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <Button fx:id="hreinsaBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onHreinsaBtn" prefHeight="25.0" prefWidth="165.0" text="Hreinsa" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <Button fx:id="skraManBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSkraMan" prefHeight="25.0" prefWidth="165.0" text="Skrá mánuð" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+    <Label text="Heild km og gjald" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <TextField fx:id="heildKmField" editable="false" focusTraversable="false" maxWidth="Infinity" style="-fx-border-color: black;" styleClass="output-field" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+    <TextField fx:id="heildGjaldField" editable="false" focusTraversable="false" maxWidth="Infinity" style="-fx-border-color: black;" styleClass="output-field" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+
+    <Label text="Fjöldi mánaða" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <TextField fx:id="fjoldiManadaField" editable="false" focusTraversable="false" maxWidth="Infinity" style="-fx-border-color: black;" styleClass="output-field" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+</GridPane>

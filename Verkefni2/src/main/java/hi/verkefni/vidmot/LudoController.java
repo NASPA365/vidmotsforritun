@@ -1,9 +1,9 @@
-package hi.verkefni;
+package hi.verkefni.vidmot;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class LudoController {
     @FXML
     private Label welcomeText;
 

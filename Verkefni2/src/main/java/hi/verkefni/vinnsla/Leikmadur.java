@@ -1,11 +1,17 @@
 package hi.verkefni.vinnsla;
 
 import javafx.application.Application;
-import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.*;
 
 public class Leikmadur {
+    private final SimpleStringProperty nafn;
+    private final SimpleIntegerProperty reitur;
 
-    private final SimpleStringProperty nafn = new SimpleStringProperty();
+    public Leikmadur(String nafn) {
+        this.nafn = new SimpleStringProperty(nafn);
+        this.reitur = new SimpleIntegerProperty(0);
+    }
+
 
     /**
      * Færir peð leikmanns um i sæti en þó aldrei fram yfir max
@@ -13,12 +19,34 @@ public class Leikmadur {
      * @param max hæsta sæti
      */
     public void faera(int i, int max) {
-
-
+        int newReitur = reitur.get() + i;
+        if (newReitur > max) {
+            newReitur = max;
+        }
+        reitur.set(newReitur);
     }
 
+    public SimpleStringProperty nafnProperty() {return nafn;}
 
-    public static void main (String[] args) {
+    public SimpleIntegerProperty reiturProperty() {return reitur;}
 
+    @Override
+    public String toString()
+    {
+        return nafn.get() + " " + reitur.get();
     }
+
+    public static class Main {
+        public static void main(String[] args) {
+            Leikmadur leikmadur = new Leikmadur("Jón");
+
+            System.out.println(leikmadur);  // Jón er á reit 0
+            leikmadur.faera(12, 24);        // Miðja borðs (5x5=25 reitir)
+            System.out.println(leikmadur);  // Jón er á reit 12
+
+            leikmadur.faera(15, 24);        // Reynir að fara yfir enda
+            System.out.println(leikmadur);  // Jón er á reit 24 (max)
+        }
+    }
+
 }

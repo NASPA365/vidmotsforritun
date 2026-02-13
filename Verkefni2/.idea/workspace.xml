@@ -7,8 +7,6 @@
     <list default="true" id="4025a412-5ab2-4b5d-921c-850e74f147cf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hi/verkefni/vidmot/LudoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hi/verkefni/vidmot/LudoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Ludo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Ludo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hi/verkefni/vidmot/ludo-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hi/verkefni/vidmot/ludo-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +171,7 @@
       <workItem from="1770658631106" duration="248000" />
       <workItem from="1770659059478" duration="499000" />
       <workItem from="1770992691697" duration="4873000" />
-      <workItem from="1770998007429" duration="1658000" />
+      <workItem from="1770998007429" duration="2531000" />
     </task>
     <servers />
   </component>

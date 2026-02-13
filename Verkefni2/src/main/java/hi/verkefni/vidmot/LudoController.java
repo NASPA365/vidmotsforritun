@@ -52,7 +52,7 @@ public class LudoController {
     }
 
     private void updateUI() {
-        // Hreinsa bara peð
+        
 
         System.out.println("Grænn reit: " + ludo.leikmenn[0].getReitur());
         System.out.println("Blár reit: " + ludo.leikmenn[1].getReitur());
@@ -63,13 +63,13 @@ public class LudoController {
             if (sp.getChildren().size() > 1) sp.getChildren().remove(1);
         }
 
-        // GRÆNT peð (leikmadur 0)
+        
         syanPed(brautReitir[ludo.leikmenn[0].getReitur()], Color.GREEN);
 
-        // BLÁTT peð (leikmadur 1)
+        
         syanPed(brautReitir[ludo.leikmenn[1].getReitur()], Color.BLUE);
 
-        // Labels
+        
         Leikmadur lm = ludo.getNuverandiLeikmadur();
         hverLabel.setText(lm.getNafn() + " gerir næst");
         teningurLabel.setText("Teningur: " + ludo.teningur.getTala());

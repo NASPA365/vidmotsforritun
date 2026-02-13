@@ -1,9 +1,5 @@
 package hi.verkefni.vinnsla;
-
-import hi.verkefni.vinnsla.Reitur;
-
-import hi.verkefni.vidmot.LudoApplication;
-import javafx.application.Application;
+import hi.verkefni.vidmot.*;
 import javafx.beans.property.SimpleObjectProperty;
 
 import java.util.ArrayList;
@@ -19,17 +15,17 @@ public class Ludo {
     SimpleObjectProperty<Leikstada> stada = new SimpleObjectProperty<>(Leikstada.ACTIVE);
 
     public Ludo() {
-        leid.add(new Reitur(0, 1, Tegund.BYRJUN));
-        leid.add(new Reitur(1, 1, Tegund.VENJULEGT));
-        leid.add(new Reitur(2, 1, Tegund.VENJULEGT));
-        leid.add(new Reitur(3, 1, Tegund.VENJULEGT));
-        leid.add(new Reitur(2, 3, Tegund.VENJULEGT));
-        leid.add(new Reitur(3, 3, Tegund.VENJULEGT));
-        leid.add(new Reitur(3, 2, Tegund.VENJULEGT));
-        leid.add(new Reitur(3, 1, Tegund.VENJULEGT));
-        leid.add(new Reitur(1, 4, Tegund.MARK));
+        leid.add(new Reitur(0, 1, Tegund.BYRJUN));  
+        leid.add(new Reitur(1, 1, Tegund.VENJULEGT)); 
+        leid.add(new Reitur(1, 2, Tegund.VENJULEGT)); 
+        leid.add(new Reitur(1, 3, Tegund.VENJULEGT)); 
+        leid.add(new Reitur(2, 3, Tegund.VENJULEGT)); 
+        leid.add(new Reitur(3, 3, Tegund.VENJULEGT)); 
+        leid.add(new Reitur(3, 2, Tegund.VENJULEGT)); 
+        leid.add(new Reitur(3, 1, Tegund.VENJULEGT)); 
+        leid.add(new Reitur(4, 1, Tegund.MARK));      
     }
-
+    
     public void nyrLeikur() {
         leikmenn[0].setReitur(0);
         leikmenn[1].setReitur(0);

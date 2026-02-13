@@ -26,15 +26,16 @@
                 <RowConstraints vgrow="SOMETIMES" minHeight="60" prefHeight="80" />
         </rowConstraints>
 
-        <StackPane fx:id="reit0" GridPane.rowIndex="0" GridPane.columnIndex="1" />
-        <StackPane fx:id="reit1" GridPane.rowIndex="1" GridPane.columnIndex="1" />
-        <StackPane fx:id="reit2" GridPane.rowIndex="1" GridPane.columnIndex="2" />
-        <StackPane fx:id="reit3" GridPane.rowIndex="1" GridPane.columnIndex="3" />
-        <StackPane fx:id="reit4" GridPane.rowIndex="3" GridPane.columnIndex="2" />
-        <StackPane fx:id="reit5" GridPane.rowIndex="2" GridPane.columnIndex="3" />
-        <StackPane fx:id="reit6" GridPane.rowIndex="3" GridPane.columnIndex="3" />
-        <StackPane fx:id="reit7" GridPane.rowIndex="3" GridPane.columnIndex="1" />
-        <StackPane fx:id="reit8" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+        <StackPane fx:id="reit0" GridPane.rowIndex="0" GridPane.columnIndex="1" /> 
+        <StackPane fx:id="reit1" GridPane.rowIndex="1" GridPane.columnIndex="1" /> 
+        <StackPane fx:id="reit2" GridPane.rowIndex="1" GridPane.columnIndex="2" /> 
+        <StackPane fx:id="reit3" GridPane.rowIndex="1" GridPane.columnIndex="3" /> 
+        <StackPane fx:id="reit4" GridPane.rowIndex="2" GridPane.columnIndex="3" /> 
+        <StackPane fx:id="reit5" GridPane.rowIndex="3" GridPane.columnIndex="3" /> 
+        <StackPane fx:id="reit6" GridPane.rowIndex="3" GridPane.columnIndex="2" /> 
+        <StackPane fx:id="reit7" GridPane.rowIndex="3" GridPane.columnIndex="1" /> 
+        <StackPane fx:id="reit8" GridPane.rowIndex="4" GridPane.columnIndex="1" /> 
+
 
         <HBox GridPane.rowIndex="5" GridPane.columnSpan="5" spacing="20" alignment="CENTER">
                 <Button fx:id="teningurButton" mnemonicParsing="false" onAction="#rollTening" text="Rúlla tening" />

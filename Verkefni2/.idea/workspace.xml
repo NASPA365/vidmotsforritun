@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4025a412-5ab2-4b5d-921c-850e74f147cf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hi/verkefni/vidmot/LudoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hi/verkefni/vidmot/LudoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hi/verkefni/vidmot/LudoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hi/verkefni/vidmot/LudoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Leikmadur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Leikmadur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Ludo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hi/verkefni/vinnsla/Ludo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hi/verkefni/vidmot/CSS/ludo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hi/verkefni/vidmot/CSS/ludo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hi/verkefni/vidmot/ludo-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hi/verkefni/vidmot/ludo-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +36,10 @@
     &quot;url&quot;: &quot;https://github.com/NASPA365/vidmotsforritun.git&quot;,
     &quot;accountId&quot;: &quot;695d4cfd-cf43-48c1-8055-aa1a4258c01c&quot;
   }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
 }</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -69,6 +70,7 @@
     "Application.Reitur.executor": "Run",
     "Application.Teningur.executor": "Run",
     "Maven.vidmot [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.vidmot [org.openjfx:javafx-maven-plugin:0.0.8:jlink].executor": "Run",
     "Maven.vidmot [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
@@ -100,7 +102,7 @@
       <recent name="hi.verkefni.vidmot" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Ludo">
+  <component name="RunManager">
     <configuration name="Ludo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hi.verkefni.vinnsla.Ludo" />
       <module name="vidmot" />
@@ -170,11 +172,23 @@
       <updated>1770658629220</updated>
       <workItem from="1770658631106" duration="248000" />
       <workItem from="1770659059478" duration="499000" />
-      <workItem from="1770992691697" duration="4840000" />
+      <workItem from="1770992691697" duration="4873000" />
+      <workItem from="1770998007429" duration="1658000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

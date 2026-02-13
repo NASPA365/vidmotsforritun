@@ -52,25 +52,39 @@ public class LudoController {
     }
 
     private void updateUI() {
-        felaPed();
+        // Hreinsa bara peð
+
+        System.out.println("Grænn reit: " + ludo.leikmenn[0].getReitur());
+        System.out.println("Blár reit: " + ludo.leikmenn[1].getReitur());
+        System.out.println("current: " + ludo.current);
 
 
-        for (int p = 0; p < 2; p++) {
-            int reit = ludo.leikmenn[p].getReitur();
-            if (reit < 9) {
-                Circle ped = new Circle(p == ludo.current ? 25 : 20);
-                ped.setStroke(Color.BLACK);
-                ped.setFill(p == 0 ? Color.GREEN : Color.BLUE);
-                brautReitir[reit].getChildren().add(ped);
-            }
+        for (StackPane sp : brautReitir) {
+            if (sp.getChildren().size() > 1) sp.getChildren().remove(1);
         }
 
+        // GRÆNT peð (leikmadur 0)
+        syanPed(brautReitir[ludo.leikmenn[0].getReitur()], Color.GREEN);
+
+        // BLÁTT peð (leikmadur 1)
+        syanPed(brautReitir[ludo.leikmenn[1].getReitur()], Color.BLUE);
+
+        // Labels
         Leikmadur lm = ludo.getNuverandiLeikmadur();
         hverLabel.setText(lm.getNafn() + " gerir næst");
-        reitLabel.setText("Reitur: " + lm.getReitur());
-
         teningurLabel.setText("Teningur: " + ludo.teningur.getTala());
+        reitLabel.setText("Reitur: " + lm.getReitur());
     }
+
+    private void syanPed(StackPane sp, Color litur) {
+        Circle ped = new Circle(20, litur);
+        ped.setStroke(Color.BLACK);
+        sp.getChildren().add(ped);
+    }
+
+
+
+
 
 
 

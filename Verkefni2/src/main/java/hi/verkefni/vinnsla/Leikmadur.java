@@ -6,6 +6,7 @@ import javafx.beans.property.*;
 public class Leikmadur {
     private final SimpleStringProperty nafn;
     private final SimpleIntegerProperty reitur;
+    public String getNafn;
 
     public Leikmadur(String nafn) {
         this.nafn = new SimpleStringProperty(nafn);
@@ -36,16 +37,28 @@ public class Leikmadur {
         return nafn.get() + " " + reitur.get();
     }
 
+    public int getReitur() {
+        return reitur.get();
+    }
+
+    public void setReitur(int newReitur) {
+        reitur.set(newReitur);
+    }
+
+    public String getNafn() {
+        return nafn.get();
+    }
+
     public static class Main {
         public static void main(String[] args) {
             Leikmadur leikmadur = new Leikmadur("Jón");
 
-            System.out.println(leikmadur);  // Jón er á reit 0
-            leikmadur.faera(12, 24);        // Miðja borðs (5x5=25 reitir)
-            System.out.println(leikmadur);  // Jón er á reit 12
+            System.out.println(leikmadur);  
+            leikmadur.faera(12, 24);        
+            System.out.println(leikmadur);  
 
-            leikmadur.faera(15, 24);        // Reynir að fara yfir enda
-            System.out.println(leikmadur);  // Jón er á reit 24 (max)
+            leikmadur.faera(15, 24);        
+            System.out.println(leikmadur);  
         }
     }
 

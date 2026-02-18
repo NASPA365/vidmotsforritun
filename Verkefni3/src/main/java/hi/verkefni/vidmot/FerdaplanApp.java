@@ -1,5 +1,6 @@
 package hi.verkefni.vidmot;
 
+import hi.verkefni.vidmot.switcher.ViewSwitcher;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -13,8 +14,10 @@ public class FerdaplanApp extends Application {
         Scene scene = new Scene(loader.load(), 600, 500);
         stage.setTitle("Verkefni3");
         stage.setScene(scene);
+        ViewSwitcher.setScene(scene);
         stage.show();
     }
+
 
     public static void main(String[] args) {
         launch();

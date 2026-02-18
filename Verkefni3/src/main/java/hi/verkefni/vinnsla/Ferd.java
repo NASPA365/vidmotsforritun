@@ -41,6 +41,6 @@ public class Ferd {
 
     @Override
     public String toString() {
-        return getHeitiFerdar() + " - " + getAfangastadur() + " - " + getDagsetning();
+        return getHeitiFerdar() + " || " + getAfangastadur() + " || " + getDagsetning();
     }
 }

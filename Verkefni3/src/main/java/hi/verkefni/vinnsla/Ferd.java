@@ -3,7 +3,6 @@ package hi.verkefni.vinnsla;
 import javafx.beans.property.*;
 import java.time.LocalDate;
 
-
 public class Ferd {
 
 //heiti ferðar ; áfangastað ; dagsetningu
@@ -40,4 +39,8 @@ public class Ferd {
         return dagsetning;
     }
 
+    @Override
+    public String toString() {
+        return getHeitiFerdar() + " - " + getAfangastadur() + " - " + getDagsetning();
+    }
 }

@@ -1,6 +1,6 @@
 package hi.verkefni.vidmot.switcher;
 
-import is.vidmot.controller.GognInterface;
+import hi.verkefni.vidmot.controller.GognInterface;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;

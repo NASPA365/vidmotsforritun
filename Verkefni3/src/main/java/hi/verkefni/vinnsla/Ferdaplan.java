@@ -14,5 +14,4 @@ public class Ferdaplan {
     }
 
     public ObservableList<Ferd> getFerdir() {return ferdir;}
-
 }

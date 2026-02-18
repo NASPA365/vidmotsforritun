@@ -15,11 +15,11 @@ public class FerdController implements GognInterface<Ferd> {
     @FXML private TextArea heitiTextArea, stadurTextArea, dagsetningTextArea ;
 
     @Override
-    public void setGogn(Ferd ferd) {
-        if (ferd != null) {
-            heitiTextArea.setText(ferd.getHeitiFerdar());
-            stadurTextArea.setText(ferd.getAfangastadur());
-            dagsetningTextArea.setText(ferd.getDagsetning().toString());
+    public void setGogn(Ferd f) {
+        if (f != null) {
+            heitiTextArea.textProperty().bind(f.heitiFerdarProperty());
+            stadurTextArea.textProperty().bind(f.afangastadurProperty());
+            dagsetningTextArea.textProperty().bind(f.dagsetningProperty().asString());
         }
     }
 

@@ -27,7 +27,7 @@ public class AdalController {
 
     @FXML private void handleSkoda() {
         Ferd valin = ferdirListView.getSelectionModel().getSelectedItem();
-        ViewSwitcher.switchTo(View.FERD, true, valin);
+        ViewSwitcher.switchTo(View.FERD, false, valin);
     }
 
 }

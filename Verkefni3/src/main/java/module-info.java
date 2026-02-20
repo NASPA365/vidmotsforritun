@@ -5,6 +5,8 @@ module hi.verkefni.vidmot {
 
     opens hi.verkefni.vidmot to javafx.fxml;
     opens hi.verkefni.vidmot.controller to javafx.fxml;
-    exports hi.verkefni.vidmot;
+    opens hi.verkefni.vidmot.view to javafx.fxml;  // ADD THIS
 
+    exports hi.verkefni.vidmot;
+    exports hi.verkefni.vidmot.view;               // ADD THIS
 }

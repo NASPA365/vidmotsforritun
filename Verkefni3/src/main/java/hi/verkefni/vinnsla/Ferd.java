@@ -9,9 +9,9 @@ public class Ferd {
 
     private final StringProperty heitiFerdar = new SimpleStringProperty();
     private final StringProperty afangastadur = new SimpleStringProperty();
-    private final StringProperty dagsetning = new SimpleStringProperty();
+    private final ObjectProperty<LocalDate> dagsetning = new SimpleObjectProperty<>();
 
-    public Ferd(String heitiFerdar, String afangastadur, String dagsetning) {
+    public Ferd(String heitiFerdar, String afangastadur, LocalDate dagsetning) {
         this.heitiFerdar.set(heitiFerdar);
         this.afangastadur.set(afangastadur);
         this.dagsetning.set(dagsetning);
@@ -32,10 +32,10 @@ public class Ferd {
         return afangastadur;
     }
 
-    public String getDagsetning() {
+    public LocalDate getDagsetning() {
         return dagsetning.get();
     }
-    public StringProperty dagsetningProperty() {
+    public ObjectProperty<LocalDate> dagsetningProperty() {
         return dagsetning;
     }
 

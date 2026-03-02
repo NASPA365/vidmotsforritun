@@ -2,13 +2,17 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
 
-<?import hi.verkefni.vidmot.view.FerdSpjald?>
 
-<fx:root type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml" spacing="10.0">
-    <FerdSpjald fx:id="fxFerdSpjald" prefHeight="250.0" prefWidth="400.0"/>
-    <padding>
-        <Insets top="15.0" right="20.0" bottom="15.0" left="20.0"/>
-    </padding>
+<fx:root type="VBox" spacing="10" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="heitiLabel" text="Heiti" />
+            <TextField fx:id="fxheitiFerdar" />
+        <Label fx:id="afangastadurLabel" text="Áfangastaður" />
+            <TextField fx:id="fxAfangastadur" />
+        <Label fx:id="dagsetningLabel" text="Dagsetning" />
+            <TextField fx:id="fxDagsetning" />
+    </children>
 </fx:root>
+
+

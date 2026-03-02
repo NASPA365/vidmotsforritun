@@ -19,7 +19,7 @@ public class FerdController implements GognInterface<Ferd> {
         if (f != null) {
             heitiTextArea.textProperty().bind(f.heitiFerdarProperty());
             stadurTextArea.textProperty().bind(f.afangastadurProperty());
-            dagsetningTextArea.textProperty().bind(f.dagsetningProperty().asString());
+            dagsetningTextArea.textProperty().bind(f.dagsetningProperty());
         }
     }
 

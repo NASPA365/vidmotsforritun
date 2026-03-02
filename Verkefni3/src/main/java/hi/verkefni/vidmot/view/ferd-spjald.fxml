@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<fx:root type="VBox" spacing="10" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="heitiLabel" text="Heiti" />
+            <TextField fx:id="fxheitiFerdar" />
+        <Label fx:id="afangastadurLabel" text="Áfangastaður" />
+            <TextField fx:id="fxAfangastadur" />
+        <Label fx:id="dagsetningLabel" text="Dagsetning" />
+            <TextField fx:id="fxDagsetning" />
+    </children>
+</fx:root>
+
+

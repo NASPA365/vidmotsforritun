@@ -2,6 +2,7 @@ package hi.verkefni.vidmot.controller;
 
 import hi.verkefni.vidmot.switcher.View;
 import hi.verkefni.vidmot.switcher.ViewSwitcher;
+import hi.verkefni.vidmot.view.FerdSpjald;
 import hi.verkefni.vinnsla.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -12,14 +13,15 @@ import javafx.scene.text.Text;
 public class FerdController implements GognInterface<Ferd> {
 
     @FXML private Button tilBakaBtn;
-    @FXML private TextArea heitiTextArea, stadurTextArea, dagsetningTextArea ;
+    @FXML private FerdSpjald fxFerdSpjald;
 
     @Override
     public void setGogn(Ferd f) {
+        System.out.println("setGogn: " + (f != null ? f.toString() : "null"));
         if (f != null) {
-            heitiTextArea.textProperty().bind(f.heitiFerdarProperty());
-            stadurTextArea.textProperty().bind(f.afangastadurProperty());
-            dagsetningTextArea.textProperty().bind(f.dagsetningProperty().asString());
+            fxFerdSpjald.heitiProperty().bind(f.heitiFerdarProperty());
+            fxFerdSpjald.afangastadurProperty().bind(f.afangastadurProperty());
+            fxFerdSpjald.dagsetningProperty().bind(f.dagsetningProperty());
         }
     }
 

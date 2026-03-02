@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import hi.verkefni.vidmot.view.FerdSpjald?>
+
+<fx:root type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml" spacing="10.0">
+    <FerdSpjald fx:id="fxFerdSpjald" prefHeight="250.0" prefWidth="400.0"/>
+    <padding>
+        <Insets top="15.0" right="20.0" bottom="15.0" left="20.0"/>
+    </padding>
+</fx:root>

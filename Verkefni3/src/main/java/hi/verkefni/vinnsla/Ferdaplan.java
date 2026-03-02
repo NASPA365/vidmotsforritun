@@ -10,7 +10,7 @@ public class Ferdaplan {
     public Ferdaplan() {
         ferdir.add(new Ferd("chill ferð","sveit", "2026.3.15"));
         ferdir.add(new Ferd("heimsækja ömmu og afa", "Litháen", "2026.5.15"));
-        ferdir.add(new Ferd("afmælispartí á næsta ári", "Hawaii", "2027.1.15)"));
+        ferdir.add(new Ferd("afmælispartí á næsta ári", "Hawaii", "2027.1.15"));
     }
 
     public ObservableList<Ferd> getFerdir() {return ferdir;}

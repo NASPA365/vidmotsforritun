@@ -23,14 +23,18 @@ public class FerdSpjald extends javafx.scene.layout.VBox  implements Initializab
     private final StringProperty dagsetningProperty = new SimpleStringProperty();
 
     public FerdSpjald() {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ferd-spjald.fxml"));
+        URL url = getClass().getResource("ferd-spjald.fxml");
+        System.out.println("FXML URL before load: " + url);
+        if (url == null) {
+            throw new RuntimeException("Move ferd-spjald.fxml to src/main/resources/hi/verkefni/vidmot/view/");
+        }
+        FXMLLoader fxmlLoader = new FXMLLoader(url);
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
-
         try {
             fxmlLoader.load();
-        }   catch (Exception e) {
-            throw new  RuntimeException(e);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -71,7 +75,7 @@ public class FerdSpjald extends javafx.scene.layout.VBox  implements Initializab
         return heitiProperty.get();
     }
 
-    public StringProperty heitiPropertyProperty() {
+    public StringProperty heitiProperty() {
         return heitiProperty;
     }
 
@@ -79,7 +83,7 @@ public class FerdSpjald extends javafx.scene.layout.VBox  implements Initializab
         return afangastadurProperty.get();
     }
 
-    public StringProperty afangastadurPropertyProperty() {
+    public StringProperty afangastadurProperty() {
         return afangastadurProperty;
     }
 
@@ -87,7 +91,7 @@ public class FerdSpjald extends javafx.scene.layout.VBox  implements Initializab
         return dagsetningProperty.get();
     }
 
-    public StringProperty dagsetningPropertyProperty() {
+    public StringProperty dagsetningProperty() {
         return dagsetningProperty;
     }
 }

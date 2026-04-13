@@ -1,0 +1,6 @@
+París 2026;París, Frakkland;1.12.2026;10.12.2026;"Róleg vetrarferð með heimsókn á söfn, kaffihús og nokkra helstu ferðamannastaði í borginni.";289000
+London 2026;London, England;5.03.2026;12.03.2026;"Ferð tengd ráðstefnu og smá skoðunarferð eftir á, með tíma fyrir verslanir og veitingastaði.";315000
+Barcelona 2026;Barcelona, Spánn;14.06.2026;22.06.2026;"Sumarfrí með stranddegi, göngutúrum um miðbæinn og heimsókn á nokkra þekkta staði.";248000
+Kaupmannahöfn 2026;Kaupmannahöfn, Danmörk;8.09.2026;13.09.2026;"Stutt borgarferð til að hitta vini, fara út að borða og njóta helgarinnar.";214000
+Reykjavík test;Reykjavík, Ísland;2.01.2026;4.01.2026;"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";179000
+Berlín 2026;Berlín, Þýskaland;18.11.2026;26.11.2026;"Menningarferð með söfnum, jólamarkaði og afslappaðri dagskrá yfir nokkra daga.";236000

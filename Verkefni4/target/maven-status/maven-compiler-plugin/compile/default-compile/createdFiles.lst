@@ -1,0 +1,15 @@
+is\vidmot\controller\FerdController.class
+is\vidmot\switcher\ViewSwitcher.class
+is\vidmot\switcher\View.class
+is\vidmot\controller\FerdDialogController.class
+is\vidmot\view\FerdSpjald.class
+is\vidmot\FerdaplanApp.class
+is\vidmot\controller\StadfestingEydaDialogController.class
+is\vidmot\controller\GognInterface.class
+is\vinnsla\Ferdaplan.class
+module-info.class
+is\vinnsla\Ferd.class
+is\vidmot\controller\FerdDialogWrapper.class
+is\vinnsla\Atburdur.class
+is\vidmot\controller\AdalController.class
+is\vidmot\controller\AdalController$1.class
